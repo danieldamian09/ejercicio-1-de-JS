@@ -32,14 +32,14 @@
         let cadena = document.getElementById('cadena');
         let indicador = document.getElementById('numero').value;
         let valor = parseInt(cadena.value);
-        let expresionRegular = /^([0-9])*$/
+        let expresionRegular = /^([0-9])*$/;
 
 
         // FUNCION FLECHA PARA CONTAR EL NUMERO DE CARACTERES
         let numeroCaracteres = contarCadena => {
 
             if (expresionRegular.test(valor)) {
-                alert('Por Favor Introduzca un Texto')
+                alert('Por Favor Introduzca un Texto');
                 cadena.value = "";               
             } else {
                 console.log(cadena.value.length);
@@ -50,19 +50,19 @@
         // FUNCION PARA RECORTAR EL TEXTO SEGUN EL NUMERO INDICADO
         function cortarCadena() {
             console.log(cadena.value.substr(0, indicador));
-        }
+        };
 
 
         // FUNCION PARA DEVOLVER UN ARRAY
         function generaArray() {
-            console.log(cadena.value.split(" "))
-        }
+            console.log(cadena.value.split(" "));
+        };
 
 
         // FUNCION PARA REPETIR LA CADENA DE TEXTO
         function repetirCadena() {
-            console.log(cadena.value.repeat(indicador))
-        }
+            console.log(cadena.value.repeat(indicador));
+        };
 
 
         numeroCaracteres();
